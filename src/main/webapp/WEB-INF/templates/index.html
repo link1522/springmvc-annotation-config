@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello</title>
+  </head>
+  <body>
+    <h1>welcome page</h1>
+
+    <form th:action="@{/sendForm}" method="post" enctype="multipart/form-data">
+      name: <input type="text" name="name" /><br />
+      address: <input type="text" name="address" /><br />
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
